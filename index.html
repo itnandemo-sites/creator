@@ -14,10 +14,43 @@
     <a href="https://itnandemo-sites.github.io/404notfont">企画</a>
     <a href="https://itnandemo-sites.github.io/creator">つくった人</a>
   </div>
-  <div class="hero">
-    <h1>404 NotFont</h1>
-    <p>URLが間違っている、ページが存在しない、または開発中です。</p>
-  </div>
+  <style>
+    .profile {
+      display: flex;              /* 横並び */
+      align-items: center;        /* 上下を中央揃え */
+      gap: 20px;                  /* 画像とテキストの間隔 */
+      padding: 20px;
+      border: 1px solid #ccc;     /* 枠線（お好みで） */
+      border-radius: 10px;
+      max-width: 600px;           /* 横幅制限 */
+      background: #f9f9f9;
+    }
+    .profile img {
+      width: 120px;               /* プロフィール画像の大きさ */
+      height: 120px;
+      border-radius: 50%;         /* 丸くする（アイコン風） */
+      object-fit: cover;          /* 画像の比率を保つ */
+    }
+    .profile-details {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .profile-details p {
+      margin: 4px 0;
+    }
+  </style>
+<body>
+  <div class="profile">
+    <!-- 左側のプロフィール画像 -->
+    <img src="image/ts457san.png" alt="プロフィール画像">
 
-  <div class="content">
-    <a href="https://itnandemo-sites.github.io/HOME">                ホームに戻る</a>
+    <!-- 右側の詳細 -->
+    <div class="profile-details">
+      <p><strong>名前:</strong> aaa</p>
+      <p><strong>なんちゃら:</strong> かんちゃら</p>
+      <p><strong>コメント:</strong> hahahahaha</p>
+    </div>
+  </div>
+</body>
+</html>
+
